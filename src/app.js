@@ -17,10 +17,12 @@ app.use(cookieParser())
 //router import
 import userRouter from './routes/user.routes.js'
 import playlistRouter from "./routes/playlist.routes.js"
+import subscriptionRouter from "./routes/subscription.routes.js"
  
 //router declartion
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/playlists", playlistRouter)
+app.use("/api/v1/subscriptions", subscriptionRouter)
 
 
 //http://localhost:8000/api/v1/users/register
